@@ -1,0 +1,81 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #e6e6e4;
+}
+
+.clock-outer {
+  position: relative;
+  margin: auto;
+  margin-top: 20vh;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  border: solid 9px #232323;
+  background: url(clock-bg.jpg) center;
+  box-shadow: -17px 13px 30px 3px #232323,
+              inset -2px 3px 6px 3px #232323;
+}
+
+.middle-dot {
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: #232323;
+}
+
+.hour-hand {
+  position: absolute;
+  width: 1%;
+  height: 37%;
+  left: 50%;
+  top: 42%;
+  transform-origin: 0 71%;
+  transform: translate(-50%, -50%);
+  border-radius: 10%;
+  background: #232323;
+}
+
+.minute-hand {
+  position: absolute;
+  width: 1%;
+  height: 53%;
+  left: 50%;
+  top: 32%;
+  transform-origin: 0 84%;
+  transform: translate(-50%, -50%);
+  border-radius: 10%;
+  background: #232323;
+}
+
+.second-hand {
+  position: absolute;
+  width: 0.7%;
+  height: 47%;
+  left: 50%;
+  top: 40%;
+  transform-origin: 0 72%;
+  transform: translate(-50%, -50%);
+  border-radius: 20%;
+  background: #232323;
+}
+
+@media screen and (max-width: 500px) {
+
+  .clock-outer {
+    position: relative;
+    margin: auto;
+    margin-top: 25vh;
+    width: 270px;
+    height: 270px;
+  }
+
+}
