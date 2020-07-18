@@ -35,7 +35,5 @@ function updateTime() {
 }
 
 
-// this IIFE will create a loop and keep the time updated
-( function() {
-  setInterval(updateTime, 1000);
-}() );
+// create a loop and keep the time updated
+setInterval(updateTime, 1000);
