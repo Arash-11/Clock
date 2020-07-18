@@ -31,7 +31,6 @@ function updateTime() {
   let secondsAngle = second * 6;
       secondsHand.style.transform = 'translate(-50%, -50%) rotate(' + secondsAngle + 'deg)';
 
-
 }
 
 
